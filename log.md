@@ -136,3 +136,12 @@ architecture (#786) and ideas/ir-representation-roadmap (#574/#575). Adversarial
 findings fixed (only lower_go.lg requires ir.structurize on main; check-cross-block! exempts cheap loads
 except :load-var, contrary to its docstring). Concepts marked stable, ideas active; per the landing plan this
 slice is for discussion with Norman before it lands, since it restates his PRs and open proposals.
+
+## [2026-09-05] update | re-verify .lgb format and debug-info against let-go main @ 0911118
+concepts/lgb-bytecode-format re-checked against pkg/bytecode: format 3 (opt-in DEFLATE body, #501; embedded
+core #502), FlagCompressed + FlagDebugSplit with per-version flag admission, CapOpcodeSet signature reject
+(#443, #608, #622), func-chunk identity (#745), split debug companion (#624); "(v2)" dropped from the title.
+concepts/debug-info: shipped `.debug` companion (digest-bound Tier 0 data), Tier 0 cost re-measured with
+lgbstat (47 KB source maps + 7.7 KB locals, ~18% of 308 KB), local names still stored not rendered, the
+.lgsym design marked design-only; speculative -> active. Adversarially reviewed (7 findings fixed).
+Sources: pr-lgb-format-evolution.
