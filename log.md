@@ -145,3 +145,10 @@ concepts/debug-info: shipped `.debug` companion (digest-bound Tier 0 data), Tier
 lgbstat (47 KB source maps + 7.7 KB locals, ~18% of 308 KB), local names still stored not rendered, the
 .lgsym design marked design-only; speculative -> active. Adversarially reviewed (7 findings fixed).
 Sources: pr-lgb-format-evolution.
+## [2026-09-05] update | graph viewer legibility pass
+Node colour now encodes page kind (Entity/Concept/Reference/Project/Idea/Source; Concept and Source were
+both the same grey), size tracks how often a page is cited instead of body length, Source pages are squares,
+speculative pages get a dashed outline. Clicking a node lights its neighbourhood and dims the rest; a legend
+with counts doubles as the kind filter; minor components (stdlib reference clusters) are packed in a grid
+beside the main graph so the fitted view stays large. Detail panel: tag chips, legible type chip, forward
+links, wide mermaid with sideways scroll, stacks under the graph below 900px. Browser-verified light + dark.
