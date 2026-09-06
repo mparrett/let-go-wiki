@@ -108,3 +108,11 @@ mechanical fixes from a "Needs review (LLM)" worklist (promotion/staleness/groun
 Includes a no-regression guard (regressed(): a re-authored page must not lose citations/sections),
 mirroring the Google OKF driver's completeness guardrail + llm_wiki's Lint suggestions. +6 tests (65 total).
 On the current wiki it flags 36/73 pages (thin stdlib refs, an uncited source page, speculative nrepl-server).
+
+## [2026-09-05] update | graph viewer legibility pass
+Node colour now encodes page kind (Entity/Concept/Reference/Project/Idea/Source; Concept and Source were
+both the same grey), size tracks how often a page is cited instead of body length, Source pages are squares,
+speculative pages get a dashed outline. Clicking a node lights its neighbourhood and dims the rest; a legend
+with counts doubles as the kind filter; minor components (stdlib reference clusters) are packed in a grid
+beside the main graph so the fitted view stays large. Detail panel: tag chips, legible type chip, forward
+links, wide mermaid with sideways scroll, stacks under the graph below 900px. Browser-verified light + dark.
