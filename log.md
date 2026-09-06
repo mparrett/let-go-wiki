@@ -129,3 +129,10 @@ embedded/generated set immediately (decision on #735, 2026-09-02). go-backend: l
 set direction is an AOT-driven tree-shaker over runtime subpackages (#652 comment, 2026-07-31); lg-compile is
 the shim over orchestration moving behind lg.compiler (#735). native-primitives: the hoist gap #686 found is
 tracked under #531.
+## [2026-09-05] ingest | compiler architecture (nnunley's 2026 refactors): 4 concepts, 2 ideas, 5 sources
+op-catalog (#612/#666/#667/#712, epic #268), structurize (#574/#674/#675), block-interface-and-liveness
+(#575, liveness.lg + blockarg.lg), bytecode-lowering (#579/#647/#648/#649/#580); ideas/compiler-namespace-
+architecture (#786) and ideas/ir-representation-roadmap (#574/#575). Adversarially reviewed at 0911118: 2
+findings fixed (only lower_go.lg requires ir.structurize on main; check-cross-block! exempts cheap loads
+except :load-var, contrary to its docstring). Concepts marked stable, ideas active; per the landing plan this
+slice is for discussion with Norman before it lands, since it restates his PRs and open proposals.
