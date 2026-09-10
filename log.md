@@ -108,3 +108,7 @@ mechanical fixes from a "Needs review (LLM)" worklist (promotion/staleness/groun
 Includes a no-regression guard (regressed(): a re-authored page must not lose citations/sections),
 mirroring the Google OKF driver's completeness guardrail + llm_wiki's Lint suggestions. +6 tests (65 total).
 On the current wiki it flags 36/73 pages (thin stdlib refs, an uncited source page, speculative nrepl-server).
+
+## [2026-09-10] docs-runner | 14e1746d1b5d
+
+Updated from `mparrett/let-go@14e1746d1b5d`: sources/design-ir-dynamic-vars.md

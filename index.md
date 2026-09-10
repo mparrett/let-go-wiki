@@ -27,6 +27,7 @@ Runtime internals: [Value Representation](concepts/value-representation.md) · [
 Every page cites where its claims come from. The [Sources](sources/let-go-readme.md) section has a summary page per ingested source — the README, design docs, guides, and external IR references — each listing the wiki pages derived from it.
 
 ---
+- [sources/design-ir-dynamic-vars](sources/design-ir-dynamic-vars.md) — Reference index of the `^:dynamic` vars that configure the IR compile/lowering pipeline, plus the ir-stress recipe for verifying a knob change
 
 # Full catalog
 Exhaustive listing by category (the LLM retrieval path; humans use the map above or the top tabs).
