@@ -42,6 +42,7 @@ Exhaustive listing by category (the LLM retrieval path; humans use the map above
 - [entities/let-go](entities/let-go.md) — A Clojure dialect with a bytecode compiler and stack VM, written in Go.
 
 ## Concepts
+- [concepts/atomic-generated-tree-install](concepts/atomic-generated-tree-install.md) — lgbgen writes --target=go output to a staging sibling and installs it via atomic renames plus a sha256 completeness sentinel, so a killed or crashed run never leaves a torn core_go_lowered/ tree
 - [concepts/block-interface-and-liveness](concepts/block-interface-and-liveness.md) — Block-args as the stack VM's substitute for locals, the shared per-block liveness analysis, the block-arg classifier and its census (rematerialize, slot, thread), the cross-block rejection in the bytecode lowering, and the measured cost that motivates erasing block-args.
 - [concepts/bytecode-compiler](concepts/bytecode-compiler.md) — How let-go compiles source code to bytecode: the reader, Indexed-RPN IR intermediate form, and code emission pipeline.
 - [concepts/bytecode-lowering](concepts/bytecode-lowering.md) — How ir.lower turns an optimized IR function into stack bytecode: source-order emission with stable slots and DUP_NTH for reuse, cheap-load re-emission, junk-below accounting and the agreement rule, RPO emission order, tail-call fusion, the def+name* seam, and the shape ratchet that pins what it emits.

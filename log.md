@@ -152,3 +152,7 @@ speculative pages get a dashed outline. Clicking a node lights its neighbourhood
 with counts doubles as the kind filter; minor components (stdlib reference clusters) are packed in a grid
 beside the main graph so the fitted view stays large. Detail panel: tag chips, legible type chip, forward
 links, wide mermaid with sideways scroll, stacks under the graph below 900px. Browser-verified light + dark.
+
+## [2026-09-14] docs-runner | 43caac29a00d
+
+Updated from `mparrett/let-go@43caac29a00d`: concepts/atomic-generated-tree-install.md
